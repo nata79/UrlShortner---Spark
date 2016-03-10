@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '1.2.2'
+}
+
+sourceCompatibility = 1.8
+version = '1.0'
+
+mainClassName = 'UrlShortner'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.sparkjava:spark-core:2.2'
+    compile 'com.google.code.gson:gson:2.6.2'
+}
